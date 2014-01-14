@@ -17,10 +17,11 @@ set :scm, 'git'
 set :scm_verbose, true
 
 default_run_options[:shell] = '/bin/bash --login'
+set :copy_exclude, ['.git', 'spec']
 
 set :stages, %w(production)
 set :default_stage, 'production'
-set :use_sudo, true
+set :use_sudo, false
 
 set :user,   'ubuntu'
 set :runner, 'ubuntu'
