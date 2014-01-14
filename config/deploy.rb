@@ -16,9 +16,7 @@ set :repository,  "git@github.com:WickedMonkeySoftware/TimePulse.git"
 set :scm, 'git'
 set :scm_verbose, true
 
-set :default_environment, {
-   'PATH' => '/home/ubuntu/.rvm/bin:/home/ubuntu/.rvm/gems/ruby-2.1.0/bin:/home/ubuntu/.rvm/gems/ruby-2.1.0@global/bin:/home/ubuntu/.rvm/rubies/ruby-2.1.0/bin:$PATH'
-}
+default_run_options[:shell] = '/bin/bash --login'
 
 set :stages, %w(production)
 set :default_stage, 'production'

@@ -1,0 +1,12 @@
+/home/ubuntu/.rvm/rubies/ruby-2.1.0/bin/ruby extconf.rb 
+creating Makefile
+
+make "DESTDIR=" clean
+
+make "DESTDIR="
+compiling atomic_reference.c
+linking shared-object atomic_reference.so
+
+make "DESTDIR=" install
+/usr/bin/install -m 0755 atomic_reference.so ./.gem.20140114-10344-1k7yvtw
+installing default atomic_reference libraries
