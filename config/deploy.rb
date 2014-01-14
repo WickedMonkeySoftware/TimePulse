@@ -23,7 +23,7 @@ set :default_stage, 'production'
 set :use_sudo, false
 
 set :user,   'ubuntu'
-set :runner, 'apache'
+set :runner, 'www-data'
 set :group,  'www-data'
 
 role(:app) { domain }
