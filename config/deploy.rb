@@ -20,7 +20,7 @@ default_run_options[:shell] = '/bin/bash --login'
 
 set :stages, %w(production)
 set :default_stage, 'production'
-set :use_sudo, false
+set :use_sudo, true
 
 set :user,   'ubuntu'
 set :runner, 'www-data'
