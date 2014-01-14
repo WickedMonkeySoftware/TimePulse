@@ -2,7 +2,7 @@ development: &development
   adapter: mysql2
   database: timepulse_production
   host: staging-front.cffrxvrqn2hw.us-east-1.rds.amazonaws.com
-  user: rooter
+  username: rooter
   password: certify588
 
 # Warning: The database defined as "test" will be erased and

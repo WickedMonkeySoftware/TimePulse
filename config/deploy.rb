@@ -16,7 +16,7 @@ set :repository,  "git@github.com:WickedMonkeySoftware/TimePulse.git"
 set :scm, 'git'
 set :scm_verbose, true
 
-default_run_options[:shell] = '/bin/bash --login'
+default_run_options[:shell] = 'sudo /bin/bash --login '
 set :copy_exclude, ['.git', 'spec']
 
 set :stages, %w(production)
@@ -25,7 +25,7 @@ set :use_sudo, false
 
 set :user,   'ubuntu'
 set :runner, 'ubuntu'
-set :group,  'ubuntu'
+set :group,  'www-data'
 
 role(:app) { domain }
 role(:web) { domain }
