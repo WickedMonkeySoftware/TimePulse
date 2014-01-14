@@ -11,18 +11,18 @@ require 'bundler'
 require 'bundler/capistrano'
 set :bundle_without,  [:development, :test]
 
-set :repository,  "git@github.com:TimePulse/TimePulse.git"
+set :repository,  "git@github.com:WickedMonkeySoftware/TimePulse.git"
 #set :deploy_via, :remote_cache
 set :scm, 'git'
 set :scm_verbose, true
 
-set :stages, %w(staging production)
-set :default_stage, 'staging'
+set :stages, %w(production)
+set :default_stage, 'production'
 set :use_sudo, false
 
-set :user,   'root'
+set :user,   'ubuntu'
 set :runner, 'apache'
-set :group,  'web'
+set :group,  'www-data'
 
 role(:app) { domain }
 role(:web) { domain }
