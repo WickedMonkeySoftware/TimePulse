@@ -25,7 +25,7 @@ set :use_sudo, false
 
 set :user,   'ubuntu'
 set :runner, 'ubuntu'
-set :group,  'www-data'
+set :group,  'ubuntu'
 
 role(:app) { domain }
 role(:web) { domain }
